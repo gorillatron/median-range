@@ -1,0 +1,15 @@
+{
+  "name": "median-range",
+  "version": "0.0.1",
+  "description": "Create a median range with lower and upper bounds. Useful for creating paginations.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha ./test"
+  },
+  "author": "Jørn Andre Tangen @gorillatron",
+  "license": "MIT",
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^2.0.0"
+  }
+}
