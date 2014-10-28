@@ -6,6 +6,8 @@ module.exports = function( median, size, lowerbounds, upperbounds ) {
   lowerbounds = (typeof lowerbounds === 'number') ? lowerbounds : -Infinity
   upperbounds = (typeof upperbounds === 'number') ? upperbounds : Infinity
 
+  if( typeof median !== 'number' || median === Infinity )
+    throw new TypeError( 'first argument(median) must be a finite number' )
 
   if( lowerbounds >= upperbounds )
     throw new RangeError( 'lowerbounds cannto be equal to or higher than upperbounds' )
